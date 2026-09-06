@@ -23,7 +23,7 @@ To address this common mix-up, this project provides an end-to-end solution for 
   </tr>
 </table>
 
-## 🚀 Live Demo
+##  Live Demo
 **https://shiba-akita-classifier-0305.streamlit.app/**
 
 **Note**: Due to free hosting, the app may take a couple of minutes to load on the first visit.
@@ -35,7 +35,7 @@ To address this common mix-up, this project provides an end-to-end solution for 
 ![demo](/asset/demo.gif)
 
 ---
-## ✨ Project Features
+##  Project Features
 
 * **Model:** Uses a Vision Transformer (ViT) fine-tuned for this task, achieving about 94% accuracy.
 * **Web App Architecture:** The project is a web app with two parts: a FastAPI backend for the model and a Streamlit frontend for the user interface.
@@ -45,7 +45,7 @@ To address this common mix-up, this project provides an end-to-end solution for 
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 * **Backend:** FastAPI, HuggingFace, PyTorch, Torchvision, Pillow
 * **Frontend:** Streamlit, Requests
@@ -53,13 +53,13 @@ To address this common mix-up, this project provides an end-to-end solution for 
 
 ---
 
-## 🏛️ Project Architecture
+##  Project Architecture
 
 The frontend and backend are separate applications. The Streamlit app (frontend) communicates with the FastAPI server (backend) using API requests. This setup makes the project easier to manage and update.
 
 ---
 
-## 🧠 Model Training Steps
+##  Model Training Steps
 
 1.  **Preparing the Data:** The dataset was compiled by collecting images from Google and Instagram. All images were preprocessed by resizing them to 224x224 pixels and normalizing their pixel values.
 2.  **Training the Model:** A pre-trained Vision Transformer (ViT) was fine-tuned on the custom dog dataset. To accelerate training, all layers of the base model were frozen, and only the final classifier head was trained.
